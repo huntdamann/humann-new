@@ -1,0 +1,112 @@
+.section-content {
+    background: linear-gradient(
+  120deg,
+  #0e0e0e,
+  #404040,
+  #2f2f2f,
+  #626161
+);
+      
+      background-size: 400% 400%;
+
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gradient 15s ease infinite;
+
+    h2 {
+      font-size: 3em;
+    }
+  }
+  .section-content-1 {
+    background: linear-gradient(
+  120deg,
+  #e9e4e4,
+  #d3cfcf,
+  #d3d2d2,
+  #c2bfbf
+);
+      
+      background-size: 400% 400%;
+
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: gradient 15s ease infinite;
+
+    h2 {
+      font-size: 3em;
+    }
+  }
+  
+  .who-we-are {
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+    right: 80px;
+    top: 80px;
+    color: #3fb1b7;
+  }
+
+  .pillars {
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+
+  }
+
+  .word-1 {
+    left: 40%;
+    top: 18%;
+  }
+  .word-2 {
+    left: 30%;
+    top: 70%;
+  }
+  .word-3 {
+    right: 40%;
+    top: 38%;
+  }
+  .word-4 {
+
+    bottom: 10%;
+    left: 40%;
+
+  }
+  .word-5 {
+    top: 70%;
+    right: 30%;
+  }
+  .noise {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  
+    background-image: url("/noise.jpeg");
+    background-repeat: repeat;
+    background-size: 128px 128px; /* or 64px for finer grain */
+  
+    opacity: 0.02;
+    mix-blend-mode: overlay;
+  }
+
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
