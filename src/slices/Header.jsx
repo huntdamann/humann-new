@@ -12,7 +12,7 @@ const Header = forwardRef(function Header(props, ref) {
   return (
     <header ref={ref} className="fixed top-[10px] left-0 w-full  left-1/2 -translate-x-1/2 z-99 h-15">
       {/* Top Bar */}
-      <div className="flex items-center justify-between px-6 bg-transparent text-white">
+      <div className="flex items-center justify-between  border-4  bg-transparent text-white">
         {/* <div className="left">
           <Image
             src="/images/logo-main.png"
@@ -23,7 +23,7 @@ const Header = forwardRef(function Header(props, ref) {
         </div> */}
 
         <div className="middle">
-          <div className="flex rounded-[20px] text-center p-2 bg-black text-sm flex-col">
+          <div className="flex rounded-[20px] w-auto text-center p-2 bg-black text-xs flex-col">
             <span>Freelance Availability:</span>
             <span>March 2026</span>
           </div>
@@ -39,6 +39,8 @@ const Header = forwardRef(function Header(props, ref) {
               padding: "1rem",
               borderRadius: "20px",
               backgroundColor: "black",
+              width: "auto",
+              fontSize: "12px"
             }}
           >
             <span
